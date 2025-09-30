@@ -4,20 +4,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bootstrap</title>
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     </head>
 
     <body>
-        <h1>Bootstrap</h1>
-        <button class="btn btn-primary">Cliquez ici</button>
-        <div class="container">
+        <nav class="navbar navbar-light bg-light px-3">
+            <div class="container-fluid">
+                <img src="images/Logo-INSA.png" alt="Logo" width="75">
+                <ul class="navbar-nav d-flex flex-row ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <h1 class="text-center mb-4">Paysages</h1>
+
             <div class="row">
-                <div class="col-md-4">Colonne 1</div>
-                <div class="col-md-4">Colonne 2</div>
-                <div class="col-md-4">Colonne 3</div>
+                <!-- Carte 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                    <img src="https://www.mmv.fr/images/cms/paysage-montagne-ete/paysage-montagne-puy-de-dome.jpg?frz-v=553" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 1</h5>
+                        <p class="card-text">Description de la carte 1.</p>
+                        <button class="btn btn-primary">Voir plus</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWKajP8bMgVB_JP9mtvHg0AtxwUJ4gtCiYQ&s" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 2</h5>
+                        <p class="card-text">Description de la carte 2.</p>
+                        <button class="btn btn-success">Voir plus</button>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWtGDfpJHhAJb62sDFM73dG4RS-yoTE-zNag&s" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte 3</h5>
+                        <p class="card-text">Description de la carte 3.</p>
+                        <button class="btn btn-danger">Voir plus</button>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </body>
 </html>
